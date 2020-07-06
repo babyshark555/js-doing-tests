@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="startGame()">
+    <button onmousedown="moveup()" onmouseup="stopMove()" ontouchstart="moveup()">UP</button>
+    <button onmousedown="movedown()" onmouseup="stopMove()" ontouchstart="movedown()">DOWN</button>
+    <button onmousedown="moveleft()" onmouseup="stopMove()" ontouchstart="moveleft()">LEFT</button>
+    <button onmousedown="moveright()" onmouseup="stopMove()" ontouchstart="moveright()">RIGHT</button>
     <p id="test">This is a test.</p>
-    <button type="button" onclick="document.getElementById('test').innerHTML = 'It works!'">test button</button>
+    <button type="button" onclick="test ()">test button</button>
+    <script src="main.js"></script>
 </body>
 </html>
